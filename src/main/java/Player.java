@@ -1,4 +1,4 @@
-public class Player {
+public abstract class Player {
 
     private String name;
     private double height;
@@ -27,8 +27,5 @@ public class Player {
     public int getShotsMade(){
         return this.shotsMade;
     }
-
-
-
 
 }
