@@ -32,6 +32,4 @@ public class PowerForwardTest {
         assertThat(powerForward.getShotsMade()).isEqualTo(900);
     }
 
-
-
 }
