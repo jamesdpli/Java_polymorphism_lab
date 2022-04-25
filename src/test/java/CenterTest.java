@@ -32,7 +32,6 @@ public class CenterTest{
         assertThat(center.getShotsMade()).isEqualTo(1000);
     }
 
-
 }
 
 
