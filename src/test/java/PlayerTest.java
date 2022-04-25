@@ -9,7 +9,7 @@ public class PlayerTest {
 
     @BeforeEach
     public void setUp(){
-        player = new Player();
+        player = new Player("Larry Bird",2.08,300,300);
     }
 
     @Test
