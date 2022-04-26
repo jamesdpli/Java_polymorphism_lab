@@ -16,4 +16,8 @@ public class Team {
         this.players.add(player);
     }
 
+    public void removePlayer(Player player){
+        this.players.remove(player);
+    }
+
 }

@@ -26,5 +26,11 @@ public class TeamTest {
         assertThat(team.players.size()).isEqualTo(3);
     }
 
+    @Test
+    public void canRemovePlayer(){
+        team.players.remove(1);
+        assertThat(team.players.size()).isEqualTo(2);
+    }
+
 
 }
