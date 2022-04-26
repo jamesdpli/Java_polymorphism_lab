@@ -1,10 +1,7 @@
 package players;
 
-import popularityRatings.PopularityRating;
-
 public class PointGuard extends Player{
 
-    private PopularityRating popularityRating;
     private String superSpeed;
 
 
@@ -16,6 +13,8 @@ public class PointGuard extends Player{
     public String useSuperSpeed(){
         return this.superSpeed;
     }
+
+
 
 
 //    public String passBall(){
