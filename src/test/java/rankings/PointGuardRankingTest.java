@@ -22,7 +22,7 @@ public class PointGuardRankingTest {
     }
 
     @Test
-    public void canAddFanFavouritePointGuard(){
+    public void canGetPointGuardRanking(){
         assertThat(pointGuards.getPointGuards().size()).isEqualTo(3);
     }
 

@@ -14,9 +14,6 @@ public class PointGuard extends Player{
         return this.superSpeed;
     }
 
-
-
-
 //    public String passBall(){
 //        pointGuard = new PointGuard("James",2.03,200,200);
 //        return pointGuard.getName() + " is passing the ball";

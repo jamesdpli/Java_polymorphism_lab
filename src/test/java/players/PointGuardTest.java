@@ -36,11 +36,10 @@ public class PointGuardTest{
         assertThat(pointGuard.getShotsMade()).isEqualTo(800);
     }
 
+    @Test
     public void canUseSuperSpeed(){
-        assertThat(pointGuard.useSuperSpeed()).isEqualTo("Magic Johnson is too fast!");
+        assertThat(pointGuard.useSuperSpeed()).isEqualTo("Magic Johnson is too fast for the competition!");
     }
-
-
 
 //    @Test
 //    public void canPassBall(){
