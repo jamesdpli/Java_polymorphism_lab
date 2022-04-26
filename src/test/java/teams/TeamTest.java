@@ -17,7 +17,7 @@ public class TeamTest {
                 "past Center"));
         team.addPlayer(new PointGuard("Johnny",2.19,4030,4000,"Speed " +
                 "past power forward"));
-        team.addPlayer(new PointGuard("Jimmy",2.09,400,400,"Speed " +
+        team.addPlayer(new PointGuard("Timmy",2.09,400,400,"Speed " +
                 "past small forward"));
     }
 
