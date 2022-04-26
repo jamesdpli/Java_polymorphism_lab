@@ -1,3 +1,4 @@
+//Cannot test Player class as you cannot new up a player due to the Player class being abstract
 //import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;
 //

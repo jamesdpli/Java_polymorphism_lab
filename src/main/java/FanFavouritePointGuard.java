@@ -3,7 +3,7 @@ import java.util.List;
 
 public class FanFavouritePointGuard {
 
-    List<PointGuard> fanFavouritePointGuards;
+    private List<PointGuard> fanFavouritePointGuards;
 
     public FanFavouritePointGuard(){
         fanFavouritePointGuards = new ArrayList<>();

@@ -7,7 +7,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class FanFavouritePointGuardTest {
 
-    private FanFavouritePointGuard fanFavouritePointGuard;
+    FanFavouritePointGuard fanFavouritePointGuard;
 
     @BeforeEach
     public void setUp(){
