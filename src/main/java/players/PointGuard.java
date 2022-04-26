@@ -4,16 +4,27 @@ public class PointGuard extends Player{
 
     private String superSpeed;
 
-
     public PointGuard(String name, double height, int shotsTaken, int shotsMade, String superSpeed){
         super(name,height,shotsTaken,shotsMade);
         this.superSpeed = superSpeed;
     }
 
-    public String useSuperSpeed(){
+    public String getSuperSpeed(){
         return this.superSpeed;
     }
 
+    public double getShootingPercentage(){
+        return ((this.getShotsMade() / this.getShotsMade()) * 100);
+    }
+
+//    public String getShootingPercentage(){
+//        return Double.ToString(((this.getShotsMade() / this.getShotsMade()) * 100));
+//    }
+
+//    public String getCrossOver(){
+//        this.crossOver = crossOver;
+//        return this.crossOver;
+//    }
 //    public String passBall(){
 //        pointGuard = new PointGuard("James",2.03,200,200);
 //        return pointGuard.getName() + " is passing the ball";
