@@ -3,6 +3,7 @@ package players;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import players.PointGuard;
+import popularityRatings.PopularityRating;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -35,16 +36,20 @@ public class PointGuardTest{
         assertThat(pointGuard.getShotsMade()).isEqualTo(800);
     }
 
-    @Test
-    public void canPassBall(){
-        assertThat(pointGuard.passBall()).isEqualTo("James is passing the ball");
-    }
-
-    @Test
-    public void canPassBallAtGivenSpeed(){
-        assertThat(pointGuard.passBall(200.5)).isEqualTo("James passed the ball at 200.5 miles per hour!");
-    }
-
+//    @Test
+//    public void canPassBall(){
+//        assertThat(pointGuard.passBall()).isEqualTo("James is passing the ball");
+//    }
+//
+//    @Test
+//    public void canPassBallAtGivenSpeed(){
+//        assertThat(pointGuard.passBall(200.5)).isEqualTo("James passed the ball at 200.5 miles per hour!");
+//    }
+//
+//    @Test
+//    public void canGetPopularityRating(){
+//        assertThat(pointGuard.getPopularityRating(PopularityRating.HIGH)).isEqualTo("");
+//    }
 
 
 }

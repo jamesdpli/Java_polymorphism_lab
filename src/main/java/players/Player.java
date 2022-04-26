@@ -7,6 +7,8 @@ public abstract class Player {
     private int shotsTaken;
     private int shotsMade;
 
+    private Player player;
+
     public Player(String name, double height, int shotsTaken, int shotsMade){
         this.name = name;
         this.height = height;
@@ -29,6 +31,17 @@ public abstract class Player {
     public int getShotsMade(){
         return this.shotsMade;
     }
+
+//    public String passBall(){
+//        return player.getName() + "passed the ball!" ;
+//    }
+//
+//    public String passBall(double speed){
+//        String speedAsAString = Double.toString(speed);
+//        return player.getName() + " passed the ball at " + Double.toString(speed) + " miles per hour!";
+//    }
+
+
 
 
 }
