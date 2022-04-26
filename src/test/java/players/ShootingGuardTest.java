@@ -12,7 +12,8 @@ public class ShootingGuardTest{
 
     @BeforeEach
     public void setUp(){
-        shootingGuard = new ShootingGuard("Stephen Curry",1.88,99999,99999);
+        shootingGuard = new ShootingGuard("Stephen Curry",1.88,
+                99999,99999,"He shoots he scores!!!!!");
     }
 
     @Test
@@ -35,6 +36,10 @@ public class ShootingGuardTest{
         assertThat(shootingGuard.getShotsMade()).isEqualTo(99999);
     }
 
+    @Test
+    public void canShoot(){
+        assertThat(shootingGuard.shoot()).isEqualTo("He shoots he scores!!!!!");
+    }
 
 
 

@@ -12,7 +12,8 @@ public class SmallForwardTest{
 
     @BeforeEach
     public void setUp(){
-        smallForward = new SmallForward("Lebron James",2.06,20000,20000);
+        smallForward = new SmallForward("Lebron James",2.06,
+                20000,20000, "Lebron has stolen the ball!");
     }
 
     @Test
@@ -34,6 +35,12 @@ public class SmallForwardTest{
     public void canGetPlayersShotsMade(){
         assertThat(smallForward.getShotsMade()).isEqualTo(20000);
     }
+
+    @Test
+    public void canGetStealBall(){
+        assertThat(smallForward.getStealBall()).isEqualTo("Lebron has stolen the ball!");
+    }
+
 
 
 

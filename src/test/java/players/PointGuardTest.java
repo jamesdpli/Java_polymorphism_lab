@@ -13,7 +13,8 @@ public class PointGuardTest{
 
     @BeforeEach
     public void setUp(){
-        pointGuard = new PointGuard("Magic Johnson",2.06,800,800);
+        pointGuard = new PointGuard("Magic Johnson",2.06,
+                800,800, "Magic Johnson is too fast for the competition!");
     }
 
     @Test
@@ -36,6 +37,12 @@ public class PointGuardTest{
         assertThat(pointGuard.getShotsMade()).isEqualTo(800);
     }
 
+    public void canUseSuperSpeed(){
+        assertThat(pointGuard.useSuperSpeed()).isEqualTo("Magic Johnson is too fast!");
+    }
+
+
+
 //    @Test
 //    public void canPassBall(){
 //        assertThat(pointGuard.passBall()).isEqualTo("James is passing the ball");
@@ -50,6 +57,4 @@ public class PointGuardTest{
 //    public void canGetPopularityRating(){
 //        assertThat(pointGuard.getPopularityRating(PopularityRating.HIGH)).isEqualTo("");
 //    }
-
-
 }

@@ -15,11 +15,11 @@ public class FanFavouritePointGuardTest {
     public void setUp(){
         fanFavouritePointGuard = new FanFavouritePointGuard();
         fanFavouritePointGuard.addPointGuard(new PointGuard("Allen Iverson",1.83,
-                99,99));
+                99,99,"Allen is just too fast for the competition!"));
         fanFavouritePointGuard.addPointGuard(new PointGuard("Chris Paul",1.83,
-                90,88));
+                90,88,"is fast"));
         fanFavouritePointGuard.addPointGuard(new PointGuard("James Dudhi-Price",1.85,
-                1999,1999));
+                1999,1999,"is fast"));
     }
 
     @Test

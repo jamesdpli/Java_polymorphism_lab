@@ -12,7 +12,9 @@ public class PowerForwardTest {
 
     @BeforeEach
     public void setUp(){
-        powerForward = new PowerForward("Tim Duncan", 2.11, 1000, 900);
+        powerForward = new PowerForward("Tim Duncan", 2.11,
+                1000, 900,"No one can stop him, he has too much strength, " +
+                "he scores in the post!");
     }
 
     @Test
@@ -33,6 +35,12 @@ public class PowerForwardTest {
     @Test
     public void canGetPlayersShotsMade(){
         assertThat(powerForward.getShotsMade()).isEqualTo(900);
+    }
+
+    @Test
+    public void canPostUp(){
+        assertThat(powerForward.postUp()).isEqualTo("No one can stop him, he has too much strength," +
+                " he scores in the post!");
     }
 
 }
