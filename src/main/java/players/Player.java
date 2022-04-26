@@ -1,3 +1,5 @@
+package players;
+
 public abstract class Player {
 
     private String name;
@@ -27,5 +29,6 @@ public abstract class Player {
     public int getShotsMade(){
         return this.shotsMade;
     }
+
 
 }

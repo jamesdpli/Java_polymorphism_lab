@@ -1,40 +1,41 @@
+package players;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import players.Center;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class ShootingGuardTest{
+public class CenterTest{
 
-    ShootingGuard shootingGuard;
+    Center center;
 
     @BeforeEach
     public void setUp(){
-        shootingGuard = new ShootingGuard("Stephen Curry",1.88,99999,99999);
+        center = new Center("Shaquille O'Neal",2.16,1000,1000);
     }
 
     @Test
     public void canGetPlayersName(){
-        assertThat(shootingGuard.getName()).isEqualTo("Stephen Curry");
+        assertThat(center.getName()).isEqualTo("Shaquille O'Neal");
     }
 
     @Test
     public void canGetPlayersHeight(){
-        assertThat(shootingGuard.getHeight()).isEqualTo(1.88);
+        assertThat(center.getHeight()).isEqualTo(2.16);
     }
 
     @Test
     public void canGetPlayersShotsTaken(){
-        assertThat(shootingGuard.getShotsTaken()).isEqualTo(99999);
+        assertThat(center.getShotsTaken()).isEqualTo(1000);
     }
 
     @Test
     public void canGetPlayersShotsMade(){
-        assertThat(shootingGuard.getShotsMade()).isEqualTo(99999);
+        assertThat(center.getShotsMade()).isEqualTo(1000);
     }
 
-
-
-
-
-
 }
+
+
+

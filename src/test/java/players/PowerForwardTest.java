@@ -1,5 +1,8 @@
+package players;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import players.PowerForward;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

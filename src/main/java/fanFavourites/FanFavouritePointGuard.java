@@ -1,3 +1,7 @@
+package fanFavourites;
+
+import players.PointGuard;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-//Cannot test Player class as you cannot new up a player due to the Player class being abstract
+//Cannot test players.Player class as you cannot new up a player due to the players.Player class being abstract
 //import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;
 //
@@ -6,11 +6,11 @@
 //
 //public class PlayerTest {
 //
-//    private Player player;
+//    private players.Player player;
 //
 //    @BeforeEach
 //    public void setUp(){
-//        player = new Player("Larry Bird",2.08,300,300);
+//        player = new players.Player("Larry Bird",2.08,300,300);
 //    }
 //
 //    @Test
