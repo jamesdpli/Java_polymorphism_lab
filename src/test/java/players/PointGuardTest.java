@@ -13,7 +13,7 @@ public class PointGuardTest{
     @BeforeEach
     public void setUp(){
         pointGuard = new PointGuard("Magic Johnson",2.06,
-                800,800, "Magic Johnson is too fast for the competition!");
+                800,800, "Magic Johnson is too fast for the competition!", 20);
 
     }
 
@@ -45,6 +45,16 @@ public class PointGuardTest{
     @Test
     public void canGetShootingPercentage(){
         assertThat(pointGuard.getShootingPercentage()).isEqualTo(100);
+    }
+
+    @Test
+    public void canGrowOld(){
+        assertThat(pointGuard.growOlder()).isEqualTo(21);
+    }
+
+    @Test
+    public void canGrowOldTwo(){
+        assertThat(pointGuard.growOlder(5)).isEqualTo(25);
     }
 
 

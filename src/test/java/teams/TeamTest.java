@@ -14,11 +14,11 @@ public class TeamTest {
     public void setUp(){
         team = new Team();
         team.addPlayer(new PointGuard("Jimmy",2.09,400,400,"Speed " +
-                "past Center"));
+                "past Center",20));
         team.addPlayer(new PointGuard("Johnny",2.19,4030,4000,"Speed " +
-                "past power forward"));
+                "past power forward",20));
         team.addPlayer(new PointGuard("Timmy",2.09,400,400,"Speed " +
-                "past small forward"));
+                "past small forward",20));
     }
 
     @Test

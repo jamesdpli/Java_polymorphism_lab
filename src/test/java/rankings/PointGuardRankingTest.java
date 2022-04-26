@@ -14,11 +14,11 @@ public class PointGuardRankingTest {
     public void setUp(){
         pointGuards = new PointGuardRanking();
         pointGuards.addPointGuard(new PointGuard("Allen Iverson",1.83,
-                99,99,"Allen is just too fast for the competition!"));
+                99,99,"Allen is just too fast for the competition!",20));
         pointGuards.addPointGuard(new PointGuard("Chris Paul",1.83,
-                90,88,"is fast"));
+                90,88,"is fast",20));
         pointGuards.addPointGuard(new PointGuard("James Dudhi-Price",1.85,
-                1999,1999,"is fast"));
+                1999,1999,"is fast",20));
     }
 
     @Test
