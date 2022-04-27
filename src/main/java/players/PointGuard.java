@@ -7,7 +7,8 @@ public class PointGuard extends Player{
     private String superSpeed;
     private int age;
 
-    public PointGuard(String name, double height, int shotsTaken, int shotsMade, String superSpeed, int age){
+    public PointGuard(String name, double height, int shotsTaken,
+                      int shotsMade, String superSpeed, int age){
         super(name,height,shotsTaken,shotsMade);
         this.superSpeed = superSpeed;
         this.age = age;
@@ -21,6 +22,11 @@ public class PointGuard extends Player{
         return ((this.getShotsMade() / this.getShotsMade()) * 100);
     }
 
+    public double getAge(){
+        return this.age;
+    }
+
+//  Use of method overloading ... intended for a retire feature
     public double growOlder(){
         return this.age = this.age + 1;
     }

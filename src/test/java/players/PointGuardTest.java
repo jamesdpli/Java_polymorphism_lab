@@ -48,6 +48,11 @@ public class PointGuardTest{
     }
 
     @Test
+    public void canGetAge(){
+        assertThat(pointGuard.getAge()).isEqualTo(20);
+    }
+
+    @Test
     public void canGrowOld(){
         assertThat(pointGuard.growOlder()).isEqualTo(21);
     }
@@ -56,8 +61,6 @@ public class PointGuardTest{
     public void canGrowOldTwo(){
         assertThat(pointGuard.growOlder(5)).isEqualTo(25);
     }
-
-
 
 //    @Test
 //    public void canGetDoACrossOver(){

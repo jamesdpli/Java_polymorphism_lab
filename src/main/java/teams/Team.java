@@ -6,18 +6,18 @@ import java.util.List;
 
 public class Team {
 
-    protected List<Player> players;
+    protected List<Player> bostonCeltics;
 
     public Team(){
-        players = new ArrayList<>();
+        bostonCeltics = new ArrayList<>();
     }
 
     public void addPlayer(Player player){
-        this.players.add(player);
+        this.bostonCeltics.add(player);
     }
 
     public void removePlayer(Player player){
-        this.players.remove(player);
+        this.bostonCeltics.remove(player);
     }
 
 }
