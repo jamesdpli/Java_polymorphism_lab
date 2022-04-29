@@ -1,5 +1,7 @@
 package players;
 
+import health_level.HealthLevel;
+
 public abstract class Player {
 
     private String name;
