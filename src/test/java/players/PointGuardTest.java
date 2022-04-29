@@ -12,8 +12,7 @@ public class PointGuardTest{
 
     @BeforeEach
     public void setUp(){
-        pointGuard = new PointGuard("Magic Johnson",2.06,
-                800,800, "Magic Johnson is too fast for the competition!", 20);
+        pointGuard = new PointGuard("Magic Johnson",2.06);
 
     }
 
@@ -28,56 +27,8 @@ public class PointGuardTest{
     }
 
     @Test
-    public void canGetPlayersShotsTaken(){
-        assertThat(pointGuard.getShotsTaken()).isEqualTo(800);
-    }
-
-    @Test
-    public void canGetPlayersShotsMade(){
-        assertThat(pointGuard.getShotsMade()).isEqualTo(800);
-    }
-
-    @Test
     public void canUseSuperSpeed(){
-        assertThat(pointGuard.getSuperSpeed()).isEqualTo("Magic Johnson is too fast for the competition!");
+        assertThat(pointGuard.superSpeed()).isEqualTo("speeds up!");
     }
 
-    @Test
-    public void canGetShootingPercentage(){
-        assertThat(pointGuard.getShootingPercentage()).isEqualTo(100);
-    }
-
-    @Test
-    public void canGetAge(){
-        assertThat(pointGuard.getAge()).isEqualTo(20);
-    }
-
-    @Test
-    public void canGrowOld(){
-        assertThat(pointGuard.growOlder()).isEqualTo(21);
-    }
-
-    @Test
-    public void canGrowOldTwo(){
-        assertThat(pointGuard.growOlder(5)).isEqualTo(25);
-    }
-
-//    @Test
-//    public void canGetDoACrossOver(){
-//        assertThat(pointGuard.getCrossOver()).isEqualTo("Magic Johnson has done a cross over.");
-//    }
-//    @Test
-//    public void canPassBall(){
-//        assertThat(pointGuard.passBall()).isEqualTo("James is passing the ball");
-//    }
-//
-//    @Test
-//    public void canPassBallAtGivenSpeed(){
-//        assertThat(pointGuard.passBall(200.5)).isEqualTo("James passed the ball at 200.5 miles per hour!");
-//    }
-//
-//    @Test
-//    public void canGetPopularityRating(){
-//        assertThat(pointGuard.getPopularityRating(PopularityRating.HIGH)).isEqualTo("");
-//    }
 }

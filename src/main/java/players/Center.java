@@ -4,14 +4,12 @@ public class Center extends Player {
 
     private String block;
 
-    public Center(String name, double height, int shotsTaken, int shotsMade, String block){
-        super(name, height, shotsTaken, shotsMade);
-        this.block = block;
+    public Center(String name, double height){
+        super(name, height);
     }
 
-    public String getBlock(){
-        return this.block;
+    public String block(){
+        return "blocks the ball!";
     }
-
 
 }
